@@ -1,7 +1,7 @@
 $ORIGIN chn.
 $TTL 120
 @ IN SOA a.gtld-servers.chn. master.hostname.com. (
-			2023080754 ; serial
+			2023080762 ; serial
 			60 ; refresh
 			3600 ; retry
 			604800 ; expiry
@@ -27,6 +27,7 @@ cntest 600 CNAME IN www.163.com.
 www.yuliuming 600 IN CNAME www.chn996.cn.
 
 ; HOST RECORDS
+polo1 720 IN A9 32768[86[21[4[2]1[1113
 
 *.boxes.shvpn 120 IN A 202.170.218.74
 admin-web.laijiawen 240 IN A9 32768[86[21[4]111

@@ -1,0 +1,21 @@
+$ORIGIN chn.
+$TTL 120
+@		IN SOA a.gtld-servers.chn. master.hostname.com. (
+		2024010101 ; serial
+		3600       ; refresh (1 hour)
+		600        ; retry (10 minutes)
+		604800     ; expire (1 week)
+		120      ; minimum (2 minutes)
+	)
+
+; Nameservers
+@		IN NS a.gtld-servers.chn.
+
+; Mailservers (MX)
+
+; Reverse DNS Records (PTR)
+
+; CNAME Records
+
+; Host Records (A)
+
