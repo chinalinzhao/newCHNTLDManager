@@ -1,7 +1,7 @@
 $ORIGIN chn.
 $TTL 120
 @ IN SOA a.gtld-servers.chn. master.hostname.com. (
-			2023080762 ; serial
+			2023080757 ; serial
 			60 ; refresh
 			3600 ; retry
 			604800 ; expiry
@@ -14,30 +14,35 @@ $TTL 120
 
 ; Mailservers
 
-jlmag.jlmag 600 IN MX jlmag
-zhisland.zhisland 600 IN MX zhisland
+jlmag.jlmag 600 IN MX 10 jlmag
+zhisland.zhisland 600 IN MX 10 zhisland
 
 ; Reverse DNS Records (PTR)
 
 ; TXT
 
+polotxt 720 IN TXT "this is txt"
+polotxt1 720 IN TXT "this is txt1"
+polotxt2 720 IN TXT "this is txt2"
 ; CNAME
 
-cntest 600 CNAME IN www.163.com.
 www.yuliuming 600 IN CNAME www.chn996.cn.
+bbb 600 IN CNAME www.chn997.cn.
 
 ; HOST RECORDS
-polo1 720 IN A9 32768[86[21[4[2]1[1113
 
-*.boxes.shvpn 120 IN A 202.170.218.74
+a.gtld-servers 120 IN A 192.168.16.142
+a.gtld-servers 120 IN A9 32768[86[10[12[3]2
 admin-web.laijiawen 240 IN A9 32768[86[21[4]111
 admin.eee 120 IN A 192.168.15.212
 admin.laijiawen 220 IN A9 32768[86[21[4]111
 admin2.laijiawen 1800 IN A 202.170.218.11
-ak47 120 IN A 192.168.15.37
-api.chn996.chn. 120 IN A 47.95.191.191
+ak47 600 IN A 192.168.1.1
+api.chn996 120 IN A 47.95.191.191
 polo 600 IN A 192.168.15.188
 polo 600 IN A 192.168.15.189
 polo 600 IN A 192.168.15.187
 polo 600 IN A 192.168.15.186
-中文 600 IN A9 32768[86[21[4]188
+aaa 600 IN A9 32768[86[21[4]188
+jlmag 600 IN A 192.168.1.1
+zhisland 600 IN A 192.168.1.2
